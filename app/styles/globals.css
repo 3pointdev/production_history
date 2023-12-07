@@ -9,3 +9,12 @@ body {
   border: 0;
   overflow: hidden;
 }
+
+th, td {
+  height: 58px;
+  display: block;
+  border: 0.5px solid black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
