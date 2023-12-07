@@ -7,9 +7,13 @@ import {
 import { createWrapper } from "next-redux-wrapper";
 import thunk from "redux-thunk";
 import { loginSlice } from "./reducers/auth/loginReducer";
+import { historySlice } from "./reducers/history/historyReducer";
+import { indicatorSlice } from "./reducers/indicator/indicatorReducer";
 
 const rootReducer = combineReducers({
   [loginSlice.name]: loginSlice.reducer,
+  [historySlice.name]: historySlice.reducer,
+  [indicatorSlice.name]: indicatorSlice.reducer,
 });
 
 const makeStore = () =>
