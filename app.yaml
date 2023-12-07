@@ -1,2 +1,2 @@
 runtime: nodejs18 # or another supported version
-service: production_history
+service: production-history
